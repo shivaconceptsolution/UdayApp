@@ -1,0 +1,44 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<header>
+ <marquee><h1>{{s}}</h1></marquee>
+  <div *ngIf="flag"> {{title}}</div>
+<a routerLink = "new-si">SI</a>
+<a routerLink = "new-swap">Swap</a>
+<a routerLink = "new-ram">Ram</a>
+<a routerLink = "app-student">Student</a>
+  
+
+ <!-- <span *ngIf = "flag; then c1 else c2">Condition is valid.</span>
+   <ng-template #c1>Condition is valid</ng-template>
+   <ng-template #c2>Condition is invalid</ng-template>
+
+  </header>
+  <section>
+    
+  <app-si></app-si>
+  <app-swap></app-swap>
+<select>
+      <option *ngFor = "let i of months">{{i}}</option>
+   </select>
+
+<form #addform = "ngForm" (ngSubmit) = "fun(addform.value)" >
+   <input type = "text" name = "a" placeholder = "enter first number" ngModel>
+   <br/>
+   <br>
+   <input type = "text" name = "b" placeholder = "enter second number" ngModel>
+   <br/>
+   <br>
+   <input type = "submit" value = "submit">
+</form>
+
+
+  <h1>
+   {{c}}
+  </h1>  -->
+  <section>
+     <router-outlet></router-outlet>
+  </section>
+
+  <footer>
+
+  </footer>
